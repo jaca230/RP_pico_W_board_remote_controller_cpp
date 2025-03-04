@@ -68,7 +68,14 @@ This project includes convenient scripts for building, installing, and running t
    ```
 
 3. **Run the Controller**  
-   Once built, you can run the controller with:
+   Once built, you can run the `main.cpp` example with. You must make sure the [board files](https://github.com/jaca230/RP_pico_W_board_interface) are uploaded to the RP Pico W. Edit the constructor at the top to point to the correct serial device:
+   ```cpp
+    PicoSerialController serialController("/dev/ttyACM0", LibSerial::BaudRate::BAUD_115200, 
+                                        LibSerial::Parity::PARITY_EVEN, LibSerial::StopBits::STOP_BITS_1, 
+                                        1000, true);  // Adjust port and baud rate as needed
+   ```
+
+   Then you can test flashing and LED on and off using the generated executable from main. 
 
    ```bash
    ./scripts/run.sh
