@@ -12,6 +12,21 @@ The **Pico Board Remote Controller** is a C++ library for controlling the Raspbe
 
 ## Installation
 
+To build and run this project, you need the following dependencies installed:
+
+### **System Requirements**  
+- **C++17 or later**  
+- **CMake 3.10+**  
+- **Make (GNU Make or equivalent)**  
+- **GCC / Clang / MSVC (any modern C++ compiler)**  
+
+### **Required Libraries**  
+These libraries must be installed before building the project:
+
+| Library | Description | Installation Command (Debian/Ubuntu) |
+|---------|------------|--------------------------------------|
+| [LibSerial](https://libserial.readthedocs.io/en/latest/) | C++ library for serial communication | `sudo apt install libserial-dev` |
+
 ### Cloning the Repository
 
 Clone the repository and initialize the submodule containing board-related files:
