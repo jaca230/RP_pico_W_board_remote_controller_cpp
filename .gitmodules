@@ -1,0 +1,3 @@
+[submodule "board_files"]
+	path = board_files
+	url = https://github.com/jaca230/RP_pico_W_board_interface.git

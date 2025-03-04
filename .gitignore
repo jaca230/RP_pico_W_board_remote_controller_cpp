@@ -1,0 +1,61 @@
+# General C++ build files
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+*.dSYM/
+*.pdb
+*.exp
+*.idb
+*.ilk
+*.manifest
+
+# Build directories
+build/
+bin/
+cmake-build-debug/
+cmake-build-release/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+CMakeLists.txt.user
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.vs/
+*.code-workspace
+
+# Debug and log files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+*.stackdump
+vgcore.*
+
+# Dependency management
+.vcpkg/
+conanbuildinfo.txt
+conaninfo.txt
+conan.lock
+build.ninja
+
+# Deprecated or old files
+deprecated/
+old/
+
+# System files (Mac/Linux)
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
